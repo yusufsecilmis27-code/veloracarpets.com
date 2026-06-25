@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr" id="main-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora Halı | Toptan Halı ve İplik Satışı (B2B)</title>
+    <!-- Harici Stil Dosyası Bağlantısı -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome İkon Kütüphanesi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#">VELORA <span id="txt-logo-sub">HALI</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#anasayfa" id="nav-home">Anasayfa</a></li>
+                    <li><a href="#koleksiyonlar" id="nav-collections">Koleksiyonlar</a></li>
+                    <li><a href="#toptan" id="nav-b2b">Toptan Satış</a></li>
+                    <li><a href="#iletisim" id="nav-contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <div class="lang-selector">
+                    <button class="lang-btn" id="active-lang"><i class="fa-solid fa-globe"></i> TR</button>
+                    <div class="lang-dropdown">
+                        <a href="#" onclick="changeLanguage('tr')">Türkçe</a>
+                        <a href="#" onclick="changeLanguage('en')">English</a>
+                        <a href="#" onclick="changeLanguage('ar')">العربية</a>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <a href="https://wa.me/903420000000" target="_blank" class="btn btn-primary" id="btn-quote"><i class="fa-brands fa-whatsapp"></i> Bilgi Al</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="anasayfa" class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">Küresel Pazara Hitap Eden Toptan Halı Üretimi</h1>
+            <p id="hero-desc">Velora Halı kalitesiyle; modern, klasik ve projelerinize özel halı & iplik çözümleri. Toplu siparişleriniz için güvenilir iş ortağınız.</p>
+            <div class="hero-actions">
+                <a href="#koleksiyonlar" class="btn btn-primary" id="btn-view-catalog">Katalogları İncele</a>
+                <a href="https://wa.me/903420000000" target="_blank" class="btn btn-outline" id="btn-req-catalog"><i class="fa-brands fa-whatsapp"></i> WhatsApp Kataloğu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="feature-card">
+            <i class="fa-solid fa-industry"></i>
+            <h3 id="f1-title">Yüksek Üretim Kapasitesi</h3>
+            <p id="f1-desc">Zamanında ve eksiksiz teslimat garantisi ile büyük ölçekli projelerinize hazırız.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3 id="f2-title">Uluslararası Sevkiyat</h3>
+            <p id="f2-desc">Dünyanın dört bir yanındaki bayilerimize güvenli ve lojistik standartlara uygun gönderim.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-gem"></i>
+            <h3 id="f3-title">Üstün İplik Kalitesi</h3>
+            <p id="f3-desc">Kendi üretimimiz olan dayanıklı ve estetik ipliklerle uzun ömürlü halılar.</p>
+        </div>
+    </section>
+
+    <section id="koleksiyonlar" class="collections container">
+        <div class="section-title">
+            <h2 id="coll-main-title">Ürün Gruplarımız ve Koleksiyonlar</h2>
+            <p id="coll-sub-title">Toptan satışa uygun ana kategorilerimiz ve ürün galerilerimiz</p>
+        </div>
+        
+        <div class="grid">
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="product-info">
+                    <h3 id="p1-title">Modern Halı Serisi</h3>
+                    <p id="p1-desc">Minimalist ve çağdaş mekanlar için trend tasarımlar.</p>
+                    
+                    <div class="mini-gallery">
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?q=80&w=150');"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1617806118233-18e1db207f62?q=80&w=150');"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?q=80&w=150');"></div>
+                    </div>
+
+                    <a href="https://wa.me/903420000000" target="_blank" class="text-link"><span id="p1-link">WhatsApp ile Bilgi Al</span> <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1579656381226-5fc0f0100c3b?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="product-info">
+                    <h3 id="p2-title">Klasik & Avangard</h3>
+                    <p id="p2-desc">Geleneksel motiflerin modern teknolojiyle buluşması.</p>
+                    
+                    <div class="mini-gallery">
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1603006905393-c3501687bfbb?q=80&w=150');"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1249656381226-000000000000?q=80&w=150'); background-color: #e0dcd5;"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?q=80&w=150');"></div>
+                    </div>
+
+                    <a href="https://wa.me/903420000000" target="_blank" class="text-link"><span>WhatsApp ile Bilgi Al</span> <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="product-item">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1534349762230-e0cadf78f5db?q=80&w=600&auto=format&fit=crop');"></div>
+                <div class="product-info">
+                    <h3 id="p3-title">Proje & Otel Halıları</h3>
+                    <p id="p3-desc">Yoğun trafiğe dayanıklı, duvardan duvara özel üretimler.</p>
+                    
+                    <div class="mini-gallery">
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=150');"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=150');"></div>
+                        <div class="gallery-thumb" style="background-image: url('https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=150');"></div>
+                    </div>
+
+                    <a href="https://wa.me/903420000000" target="_blank" class="text-link"><span>WhatsApp ile Bilgi Al</span> <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="toptan" class="b2b-banner">
+        <div class="container b2b-content">
+            <h2 id="b2b-title">Velora Halı İle Doğrudan İletişime Geçin</h2>
+            <p id="b2b-desc">Dünya çapındaki geniş bayi ağımıza katılmak ve toptan fiyat teklifleri almak için formu doldurup tek tıkla bizimle WhatsApp üzerinden görüşmeye başlayın.</p>
+            <a href="https://wa.me/903420000000" target="_blank" class="btn btn-primary" id="btn-b2b-join"><i class="fa-brands fa-whatsapp"></i> Doğrudan WhatsApp Hattı</a>
+        </div>
+    </section>
+
+    <section id="iletisim" class="contact-section container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2 id="info-title">Hızlı Bilgi & İletişim</h2>
+                <p id="info-desc">Toplu siparişler, iplik tedariği veya bayilik şartları hakkında detaylı bilgi almak için formu doldurun, WhatsApp'tan yanıtlayalım.</p>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="info-addr">Organize Sanayi Bölgesi, Gaziantep / Türkiye</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+90 (342) 000 00 00</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>b2b@velorahali.com</span>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 id="form-title">WhatsApp Hızlı Bilgi Formu</h3>
+                <form onsubmit="sendToWhatsApp(event)">
+                    <div class="form-group">
+                        <input type="text" id="input-company" placeholder="Firma Adı" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="input-name" placeholder="Yetkili Adı Soyadı" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" id="input-msg" placeholder="Mesajınız veya Sipariş Detayınız (Miktar, Ölçü vb.)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="btn-submit"><i class="fa-brands fa-whatsapp"></i> WhatsApp ile Bilgi İste</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p id="footer-text">&copy; 2026 Velora Halı. Tüm Hakları Saklıdır. (Toptan B2B Portalı)</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harici Script Dosyası Bağlantısı -->
+    <script src="lang.js"></script>
+</body>
+</html>
