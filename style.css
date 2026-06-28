@@ -1,0 +1,1451 @@
+/* ==========================================
+   VELORA CARPETS
+   STYLE.CSS
+========================================== */
+
+:root{
+
+    --black:#121212;
+    --black2:#1d1d1d;
+    --gold:#c8a46a;
+    --gold-hover:#b58f53;
+    --white:#ffffff;
+    --gray:#777777;
+    --light:#f8f8f8;
+    --border:#e6e6e6;
+    --green:#25D366;
+
+    --radius:12px;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#fff;
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    transition:.30s;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(18,18,18,.96);
+
+    backdrop-filter:blur(8px);
+
+    z-index:999;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+header .container{
+
+    height:85px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo img{
+
+    height:55px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+nav .active{
+
+    color:var(--gold);
+
+}
+
+.header-btn{
+
+    background:var(--gold);
+
+    color:#111;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+.header-btn:hover{
+
+    background:var(--gold-hover);
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    position:relative;
+
+    height:92vh;
+
+    background:url(images/hero.jpg)
+    center center/cover;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    color:#fff;
+
+    max-width:700px;
+
+}
+
+.hero-content span{
+
+    color:var(--gold);
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+.hero-content h1{
+
+    font-size:62px;
+
+    line-height:1.15;
+
+    margin:20px 0;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    border-radius:50px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:var(--gold-hover);
+
+}
+
+.btn-dark{
+
+    background:#25D366;
+
+}
+
+.btn-dark:hover{
+
+    background:#eee;
+
+}
+/* ==========================================
+   BÖLÜM BAŞLIKLARI
+========================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin:15px 0;
+
+    color:var(--black);
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   SPOT OUTLET
+========================================== */
+
+.spot-section{
+
+    background:#fff;
+
+}
+
+.spot-box{
+
+    background:#fff7f7;
+
+    border:1px solid #ffd7d7;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.spot-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:35px;
+
+    border-bottom:1px solid #ffdede;
+
+}
+
+.spot-top h2{
+
+    color:#d93333;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.spot-top p{
+
+    color:#666;
+
+}
+
+.spot-info{
+
+    display:flex;
+
+    gap:50px;
+
+}
+
+.spot-info small{
+
+    display:block;
+
+    color:#c44;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.spot-info strong{
+
+    font-size:16px;
+
+}
+
+.green{
+
+    color:#25D366;
+
+}
+
+.spot-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:35px;
+
+}
+
+.spot-content p{
+
+    margin-bottom:15px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   ÜRÜNLER
+========================================== */
+
+.products{
+
+    background:#fafafa;
+
+}
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    height:330px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.product-content{
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.product-content h3{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+    color:var(--black);
+
+}
+
+.product-content p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   BUTONLAR
+========================================== */
+
+.product-content .btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+/* ==========================================
+   HAKKIMIZDA
+========================================== */
+
+.about{
+
+    background:#ffffff;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-content span{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.about-content h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+    color:var(--black);
+
+}
+
+.about-content p{
+
+    color:var(--gray);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   NEDEN VELORA
+========================================== */
+
+.features{
+
+    background:#fafafa;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card .icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:34px;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:15px;
+
+    color:var(--black);
+
+}
+
+.feature-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   İSTATİSTİKLER
+========================================== */
+
+.stats{
+
+    background:linear-gradient(rgba(18,18,18,.92),rgba(18,18,18,.92)),
+    url(images/stats.jpg) center center/cover;
+
+    color:#fff;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+.stats-grid h2{
+
+    font-size:48px;
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+}
+
+.stats-grid p{
+
+    color:#ddd;
+
+}
+
+/* ==========================================
+   İLETİŞİM
+========================================== */
+
+.contact-home{
+
+    background:#fff;
+
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.dark-btn{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+.dark-btn:hover{
+
+    background:#000;
+
+}
+
+.whatsapp-btn{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#20b65a;
+
+}
+
+/* ==========================================
+   HARİTA
+========================================== */
+
+.map{
+
+    width:100%;
+
+    height:450px;
+
+}
+
+.map iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+}
+/*==========================================
+    FOOTER
+==========================================*/
+
+footer{
+
+    background:#111;
+
+    color:#ddd;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:50px;
+
+    padding:70px 0;
+
+}
+
+.footer-grid h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.footer-grid p{
+
+    line-height:1.9;
+
+    color:#aaa;
+
+}
+
+.footer-grid ul{
+
+    padding:0;
+
+}
+
+.footer-grid li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-grid a{
+
+    color:#ccc;
+
+}
+
+.footer-grid a:hover{
+
+    color:var(--gold);
+
+}
+
+.social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.social a{
+
+    background:#1c1c1c;
+
+    padding:12px 18px;
+
+    border-radius:8px;
+
+    transition:.30s;
+
+}
+
+.social a:hover{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+.copyright{
+
+    border-top:1px solid #222;
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+/*==========================================
+    FLOATING WHATSAPP
+==========================================*/
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.30s;
+
+    z-index:999;
+
+}
+
+.floating-whatsapp:hover{
+
+    transform:translateY(-5px);
+
+    background:#20b65a;
+
+}
+
+/*==========================================
+    GENEL HOVER
+==========================================*/
+
+img{
+
+    user-select:none;
+
+}
+
+.card,
+.product-card,
+.feature-card,
+.spot-box{
+
+    transition:.35s;
+
+}
+
+.card:hover,
+.product-card:hover,
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+::selection{
+
+    background:var(--gold);
+
+    color:#fff;
+
+}
+
+/*==========================================
+    TABLET
+==========================================*/
+
+@media(max-width:992px){
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .spot-top{
+
+        flex-direction:column;
+
+        gap:25px;
+
+        align-items:flex-start;
+
+    }
+
+    .spot-content{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}
+
+/*==========================================
+    MOBİL
+==========================================*/
+
+@media(max-width:768px){
+
+    header .container{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px 0;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .header-btn{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        height:70vh;
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .spot-top h2{
+
+        font-size:26px;
+
+    }
+
+    .spot-info{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .footer-grid{
+
+        text-align:center;
+
+    }
+
+    .social{
+
+        align-items:center;
+
+    }
+
+    .floating-whatsapp{
+
+        width:55px;
+
+        height:55px;
+
+        right:15px;
+
+        bottom:15px;
+
+        font-size:24px;
+
+    }
+
+}
+
+/*==========================================
+    KÜÇÜK TELEFON
+==========================================*/
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .logo img{
+
+        height:45px;
+
+    }
+
+    .spot-info{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+}
+
+/*==========================================
+İLETİŞİM SAYFASI
+==========================================*/
+
+.contact-page{
+
+    padding:80px 0;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+}
+
+.contact-info span{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+}
+
+.contact-info h2{
+
+    font-size:40px;
+
+    margin:15px 0 25px;
+
+}
+
+.contact-info p{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.info-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    background:#fafafa;
+
+    border-left:4px solid var(--gold);
+
+    border-radius:8px;
+
+}
+
+.contact-form{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-form h3{
+
+    margin-bottom:25px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-family:inherit;
+
+    font-size:15px;
+
+}
+
+.contact-form textarea{
+
+    resize:vertical;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--gold);
+
+}
+
+.contact-form .btn{
+
+    width:100%;
+
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ===========================
+   PRODUCT DETAIL PAGE
+=========================== */
+
+.product-page{
+    padding:80px 0;
+}
+
+.product-wrapper{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:60px;
+    align-items:flex-start;
+}
+
+.gallery{
+    display:flex;
+    gap:20px;
+}
+
+.thumbs{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.thumbs img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #ddd;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.thumbs img:hover,
+.thumbs img.active{
+    border-color:var(--gold);
+}
+
+.main-photo{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.main-photo img{
+    width:100%;
+    max-width:550px;
+    height:550px;
+    object-fit:contain;
+    background:#f8f8f8;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    padding:10px;
+}
+
+.product-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.product-info select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.spec-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.spec-table td{
+    padding:14px;
+    border-bottom:1px solid #eee;
+}
+
+.advantages{
+    display:grid;
+    gap:12px;
+    margin-top:20px;
+}
+
+.adv-item{
+    background:#fafafa;
+    padding:12px 16px;
+    border-radius:10px;
+}
+
+@media(max-width:992px){
+
+    .product-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+        flex-direction:column-reverse;
+    }
+
+    .thumbs{
+        flex-direction:row;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .main-photo img{
+        max-width:100%;
+        height:450px;
+    }
+}
+
+@media(max-width:768px){
+
+    .main-photo img{
+        height:350px;
+    }
+
+    .thumbs img{
+        width:70px;
+        height:70px;
+    }
+}
