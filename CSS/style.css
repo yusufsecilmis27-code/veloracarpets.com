@@ -178,6 +178,16 @@ nav .active{
     height: 92vh;
 
     background: url("../hero.jpg") center center / cover no-repeat;
+    position:relative;
+
+    height:92vh;
+
+    background:url(hero.jpg)
+    center center/cover;
+
+    display:flex;
+
+    align-items:center;
 
     display: flex;
     align-items: center;
