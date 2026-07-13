@@ -174,18 +174,13 @@ nav .active{
 ========================================== */
 
 .hero{
+    position: relative;
+    height: 92vh;
 
-    position:relative;
+    background: url("../hero.jpg") center center / cover no-repeat;
 
-    height:92vh;
-
-    background:url(images/hero.jpg)
-    center center/cover;
-
-    display:flex;
-
-    align-items:center;
-
+    display: flex;
+    align-items: center;
 }
 
 .hero-overlay{
